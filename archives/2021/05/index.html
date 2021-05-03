@@ -18,25 +18,9 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-  <title>计算机体系与结构 - HyPerce‘s jotter</title>
+  <title>归档 - HyPerce‘s jotter</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.6.0/styles/github-gist.min.css" />
-    
-  
-
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  
 
 
 
@@ -64,7 +48,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -158,51 +142,14 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/tp7.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="计算机体系与结构">
+            <span class="h2" id="subtitle" title="归档">
               
             </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-04-25 14:48" pubdate>
-        2021年4月25日 下午
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      632 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      6
-       分钟
-    </span>
-  
-
-  
-  
-</div>
 
             
           </div>
@@ -215,93 +162,40 @@
 
   <main>
     
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 4 篇文章</p>
+  <hr>
+  
+  
+    
       
+      <p class="h5">2021</p>
+    
+    <a href="/2021/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B1%82%E6%AC%A1%E4%B8%8E%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">计算机的层次与编程语言</span>
+      <time style="float: right;">05-03</time>
+    </a>
+  
+</div>
 
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">计算机体系与结构</h1>
-            
-            <div class="markdown-body">
-              <h1 id="冯诺依曼体系"><a href="#冯诺依曼体系" class="headerlink" title="冯诺依曼体系"></a>冯诺依曼体系</h1><p> <u>将程序指令和数据一起存储的计算机设计概念结构</u></p>
-<h2 id="体系的提出"><a href="#体系的提出" class="headerlink" title="体系的提出"></a>体系的提出</h2><p>早期计算机的使用仅含固定用途，一台计算机只能有一个功能。要想将计算机多用的话，需要重新改变程序更改结构，重新设计电路，很明显这样十分不便。这时，冯诺依曼提出一个想法：把程序存储起来，设计一个通用的电路。当我们使用某一个程序时，计算机先将存储的程序指令翻译成电路语言给通用电路，通用电路就能执行相关逻辑，这样一个计算机可以存储多个程序，也就可以同时处理多个问题。于是，由冯诺依曼体系衍生出的存储型计算机改变了之前计算机糟糕的局面。将指令看作特殊类型的静态数据储存，一台计算机便可以轻易改变程序，改变程序内容，无需再重新更改结构设计电路。由冯诺依曼体系可以知道，存储型计算机需要至少五个部分：存储器、运算器、控制器、输入设备、输出设备。现代计算机都是冯诺依曼机</p>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>能够把需要的程序和数据送到计算机中</p>
-<p>能够长期记忆程序、数据、中间结果及最终运算结果的能力</p>
-<p>具备算数、逻辑运算和数据传送等数据加工能力</p>
-<p>能够按照要求将处理结果输出给用户</p>
-<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><h3 id="早期冯诺依曼计算机"><a href="#早期冯诺依曼计算机" class="headerlink" title="早期冯诺依曼计算机"></a>早期冯诺依曼计算机</h3><p><img src="https://tse1-mm.cn.bing.net/th/id/OIP.6CSr6bS73OGqOPdN1eg24wHaDZ?w=331&h=160&c=7&o=5&pid=1.7" srcset="/img/dd.gif" lazyload alt="冯诺依曼结构CPU示意图 的图像结果"></p>
-<h3 id="冯诺依曼瓶颈"><a href="#冯诺依曼瓶颈" class="headerlink" title="冯诺依曼瓶颈"></a>冯诺依曼瓶颈</h3><p> 早期冯诺依曼计算机将存储器和CPU分开，导致了CPU和存储器之间的问题无法调和。CPU的处理速率超过存储器传递速率过多，CPU经常空转等待数据，使得CPU的算力极大的被浪费</p>
-<p><img src="https://tse1-mm.cn.bing.net/th/id/OIP.rLX2-st-02zvrMI8XjaY1QHaDd?w=319&h=163&c=7&o=5&pid=1.7" srcset="/img/dd.gif" lazyload alt="冯诺依曼结构CPU示意图 的图像结果"></p>
-<h1 id="现代计算机的结构"><a href="#现代计算机的结构" class="headerlink" title="现代计算机的结构"></a>现代计算机的结构</h1><p>本质讲还是冯诺伊曼结构，实在冯诺依曼结构的基础上进行修改，目的是为了解决CPU与存储设备之间的性能差异问题。</p>
-<p><img src="https://tse2-mm.cn.bing.net/th/id/OIP.NK1f2Ts1Leq4XMRY5wsMcAHaDn?w=346&h=170&c=7&o=5&pid=1.7" srcset="/img/dd.gif" lazyload alt="冯诺依曼结构CPU示意图 的图像结果"></p>
-<h2 id="主要问题：存储器"><a href="#主要问题：存储器" class="headerlink" title="主要问题：存储器"></a>主要问题：存储器</h2><p> 广义上的存储器包括磁带和硬盘，而我们在围绕CPU说的存储器的更高速的设备包括CPU的寄存器和计算机里的内存</p>
-<p>现代计算机的结构可以说时以寄存器为核心的</p>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                
+
+
+
               </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
-              
-                <div class="post-prevnext">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2021/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B1%82%E6%AC%A1%E4%B8%8E%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">计算机的层次与编程语言</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2021/04/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%88%86%E7%B1%BB/">
-                        <span class="hidden-mobile">计算机的分类</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
             </div>
-
-            
-          </article>
+          </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
 
     
@@ -381,15 +275,9 @@
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.2/dist/tocbot.min.js" ></script>
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
