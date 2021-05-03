@@ -158,7 +158,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/tp3.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      151 字
+      833 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      9
        分钟
     </span>
   
@@ -228,9 +228,81 @@
             <h1 style="display: none">计算机的层次与编程语言</h1>
             
             <div class="markdown-body">
-              <h1 id="程序翻译与程序解释"><a href="#程序翻译与程序解释" class="headerlink" title="程序翻译与程序解释"></a>程序翻译与程序解释</h1><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>人类语言与计算机语言不同。计算机只能识别010111….这样的比特位，无法识别人类的语言。所以需要进行语言之间的转换。</p>
-<h2 id="翻译与解释的区别"><a href="#翻译与解释的区别" class="headerlink" title="翻译与解释的区别"></a>翻译与解释的区别</h2><p>程序翻译：用较为高级的计算机语言L1进行程序的逻辑描述（通俗的说写一个程序），然后通过编译器生成一个较为低级的计算机语言L2，L2能被计算机直接读取并执行。这个由L1生成L2的过程称为程序翻译。</p>
-<p><img src="C:\Users\24878\blog\source\计算机i层次与编程语言1.jpg" srcset="/img/dd.gif" lazyload alt="计算机i层次与编程语言1"></p>
+              <h1 id="计算机的翻译和解释"><a href="#计算机的翻译和解释" class="headerlink" title="计算机的翻译和解释"></a>计算机的翻译和解释</h1><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>人类语言与计算机语言不同。计算机只能识别010111….这样的比特位，无法识别人类的语言。所以需要进行语言之间的转换。</p>
+<h2 id="翻译与解释的区别"><a href="#翻译与解释的区别" class="headerlink" title="翻译与解释的区别"></a>翻译与解释的区别</h2><h3 id="程序翻译"><a href="#程序翻译" class="headerlink" title="程序翻译"></a>程序翻译</h3><p>用较为高级的计算机语言L1进行程序的逻辑描述（通俗的说写一个程序），然后通过编译器生成一个较为低级的计算机语言L0，L0能被计算机直接读取并执行。这个由L1生成L0的过程称为程序翻译。例如C\C++、Object-C、Golang</p>
+<pre><code class=" mermaid">graph TD
+a(较高级语言L1) --编译器  --&gt;c(较低级语言L0)
+c --&gt;b(计算机执行)
+</code></pre>
+
+<h3 id="程序解释"><a href="#程序解释" class="headerlink" title="程序解释"></a>程序解释</h3><p>用较为高级的计算机语言L1进行程序的逻辑描述，将L1作为输入经过一个由较为低级的计算机语言L0所编写的程序（解释器），输出L0语言，再被计算机读取并执行。例如Python、Php、Javascript</p>
+<pre><code class=" mermaid">graph TD
+a(输入较为高级的计算机语言L1)--解释器--&gt;b(输出较为低级的计算机语言L0)
+b--&gt;c(计算机执行)
+</code></pre>
+
+<ul>
+<li><p>计算机执行的指令都是L0</p>
+</li>
+<li><p>翻译过程生成新的L0程序，解释过程不生成新的L0程序、</p>
+</li>
+<li><p>解释过程由L0编写的解释器去解释L1程序</p>
+</li>
+</ul>
+<p>还存在一些语言属于翻译+解释，例如Java、C#</p>
+<p>拿Java举例</p>
+<pre><code class=" mermaid">graph LR
+a(Java程序)--编译--&gt;b(JVM字节码)--解释--&gt;c(机器码)
+              d(在JVM虚拟机上层)
+
+</code></pre>
+
+<h1 id="计算机的层次"><a href="#计算机的层次" class="headerlink" title="计算机的层次"></a>计算机的层次</h1><pre><code class=" mermaid">graph LR
+a(应用层)
+b(高级语言层)
+c(汇编语言层)
+d(操作系统层)
+e(传统机器层)
+f(微程序机器层)
+g(硬件逻辑层)
+</code></pre>
+
+<p>其中下三层称为实际机器，上四层称为虚拟机器，在虚拟机中，第一层位应用软件，下面三层称为软件系统</p>
+<h2 id="硬件逻辑层"><a href="#硬件逻辑层" class="headerlink" title="硬件逻辑层"></a>硬件逻辑层</h2><ul>
+<li>门电路、触发器等逻辑电路组成</li>
+<li>属于电子工程的领域</li>
+</ul>
+<h2 id="微程序机器层"><a href="#微程序机器层" class="headerlink" title="微程序机器层"></a>微程序机器层</h2><ul>
+<li>编程语言是微指令集</li>
+<li>微指令所组成的微程序直接交由硬件执行</li>
+<li>一般是硬件公司所了解的，由硬件程序员编写指令</li>
+</ul>
+<h2 id="传统机器层"><a href="#传统机器层" class="headerlink" title="传统机器层"></a>传统机器层</h2><ul>
+<li>编程语言是CPU指令集（机器指令）储存在CPU中</li>
+<li>编程语言和硬件直接相关，可以直接被机器识别执行</li>
+<li>不同架构的CPU，CPU指令集不同</li>
+</ul>
+<p>在实际机器层，一般一个机器指令对应一个微程序，一个微程序对应一组微指令。</p>
+<pre><code class=" mermaid">graph TD
+a(微指令&lt;微程序&#x3D;机器指令)
+</code></pre>
+
+<h2 id="操作系统层"><a href="#操作系统层" class="headerlink" title="操作系统层"></a>操作系统层</h2><ul>
+<li>向上提供简易的操作界面</li>
+<li>向下对接了指令系统，管理硬件资源</li>
+<li>位于软件和硬件之间的</li>
+</ul>
+<h2 id="汇编语言层"><a href="#汇编语言层" class="headerlink" title="汇编语言层"></a>汇编语言层</h2><ul>
+<li>编程语言是汇编语言</li>
+<li>汇编语言可以翻译成可直接执行的机器语言</li>
+<li>翻译过程的程序是汇编器</li>
+</ul>
+<h2 id="高级语言层"><a href="#高级语言层" class="headerlink" title="高级语言层"></a>高级语言层</h2><ul>
+<li>高级语言层</li>
+<li>有上百种的高级语言</li>
+</ul>
+<h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h2><p>面向具体问题的而专门设计的应用</p>
+<p><strong>计算机的分层是为了便于理解计算机的结构层次，并不是一成不变的</strong></p>
 
             </div>
             <hr>
