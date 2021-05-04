@@ -8,7 +8,7 @@
     <link href="/2021/05/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%AE%A1%E7%AE%97%E5%8D%95%E4%BD%8D/"/>
     <url>/2021/05/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%AE%A1%E7%AE%97%E5%8D%95%E4%BD%8D/</url>
     
-    <content type="html"><![CDATA[<h1 id="容量单位"><a href="#容量单位" class="headerlink" title="容量单位"></a>容量单位</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="容量单位"><a href="#容量单位" class="headerlink" title="容量单位"></a>容量单位</h1><h2 id="bit比特位"><a href="#bit比特位" class="headerlink" title="bit比特位"></a>bit比特位</h2><p>在物理层面，我们用高低电平记录信息，即高表示“1”，低表示“0”。理论上，计算机只能识别1/0两种状态。这里的0/1就是比特位。很明显，一个比特位只能表示两个状态，蕴含的信息太少了，于是人们想到了组合的方法来储存信息，催生了字节</p><h2 id="Byte字节"><a href="#Byte字节" class="headerlink" title="Byte字节"></a>Byte字节</h2><p>一个bit蕴含的信息少，那么我用八个bits的组合来储存信息，所以<u>1Byte=8bits</u>。在早期硬盘，内存都没有这么大的时候字节还是十分有用的，但是随着需求的变大，字节无法满足需要了。于是老办法依然有效，定义出了其他的容量单位。</p><h2 id="其他单位及换算"><a href="#其他单位及换算" class="headerlink" title="其他单位及换算"></a>其他单位及换算</h2><p><img src="https://www.pianshen.com/images/614/f71c0b5650b2111ff8a0c5bb57da3646.JPEG" alt="查看源图像"></p><h1 id="速度单位"><a href="#速度单位" class="headerlink" title="速度单位"></a>速度单位</h1><h2 id="网络速度"><a href="#网络速度" class="headerlink" title="网络速度"></a>网络速度</h2><p>一般来说，速度=容量/时间。如MB/s。但是在网络上有一个常用的单位Mbps，通常bps省略。这里的M和MB/s不一样，<strong>1M/s=1Mbps=1Mbit/s，1Mbit/s=(1/8)MB/s=0.125MB/s。</strong> 这就是为什么我们在100M光纤上测试的峰值速度只有12.5M每秒，因为它们的计算单位不一样。 </p><h2 id="CPU的速度"><a href="#CPU的速度" class="headerlink" title="CPU的速度"></a>CPU的速度</h2><p> CPU的速度一般是指CPU的时钟频率，单位为赫兹（Hz）。目前主流的CPU时钟频率都在2GHz以上。</p><h3 id="理解赫兹"><a href="#理解赫兹" class="headerlink" title="理解赫兹"></a>理解赫兹</h3><p>Hz是秒分之一，是每秒钟周期性变动重复次数的计量。Hz不是计算机的专有单位。在计算机中，我们是用高低电平来表示01，所以这里是指每秒钟高低电平变化的次数。<strong>2GHz=2*1000^3Hz=每秒20亿次。</strong> </p>]]></content>
     
     
     
