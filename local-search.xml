@@ -4,6 +4,45 @@
   
   
   <entry>
+    <title>计算机的输入输出设备</title>
+    <link href="/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87/"/>
+    <url>/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87/</url>
+    
+    <content type="html"><![CDATA[<h1 id="常见输入输出设备"><a href="#常见输入输出设备" class="headerlink" title="常见输入输出设备"></a>常见输入输出设备</h1><h2 id="字符输入设备"><a href="#字符输入设备" class="headerlink" title="字符输入设备"></a>字符输入设备</h2><p> 主要是键盘，键盘又可以分为三种：薄膜键盘、机械键盘、静电容键盘。</p><h2 id="图形输入设备"><a href="#图形输入设备" class="headerlink" title="图形输入设备"></a>图形输入设备</h2><p> 鼠标、数位板、扫描仪</p><h2 id="图像输出设备"><a href="#图像输出设备" class="headerlink" title="图像输出设备"></a>图像输出设备</h2><p> 显示器、打印机、投影仪</p><h1 id="输入输出接口的通用设计"><a href="#输入输出接口的通用设计" class="headerlink" title="输入输出接口的通用设计"></a>输入输出接口的通用设计</h1><p> 包括数据线、状态线、命令线、设备选择线</p><h2 id="数据线"><a href="#数据线" class="headerlink" title="数据线"></a>数据线</h2><p>是I/O设备与主机之间进行数据交换的传输线，由数据传输的类型分为单向传输线和双向传输线。</p><h2 id="状态线"><a href="#状态线" class="headerlink" title="状态线"></a>状态线</h2><p> IO设备状态向主机报告的信号线，能够查询设备是否正常连接并就绪，设备是否被占用。</p><h2 id="命令线"><a href="#命令线" class="headerlink" title="命令线"></a>命令线</h2><p> 是CPU（或者说主机）向设备发送命令的信号线，比如发行读写信号，发送启动停止信号等等。</p><h2 id="设备选择线"><a href="#设备选择线" class="headerlink" title="设备选择线"></a>设备选择线</h2><p> 主机选择IO设备进行操作的信号线，对连在总线上的设备进行选择。</p><h1 id="CPU与IO设备通信"><a href="#CPU与IO设备通信" class="headerlink" title="CPU与IO设备通信"></a>CPU与IO设备通信</h1><p><strong>CPU的速度与IO设备的速度不一致，CPU速度是IO设备的几百倍</strong></p><h2 id="程序中断"><a href="#程序中断" class="headerlink" title="程序中断"></a>程序中断</h2><p> CPU在处理主程序时，需要用到IO设备便会发送一个启动信号给IO设备，此时在IO设备启动的时间里，CPU会继续处理主程序。当IO设备就绪时，向CPU发送中断信号，CPU中则由专门的电路来响应，并暂停主程序，向IO设备发送数据。发送完毕后，CPU中断返回，继续执行主程序。</p><p><u>程序中断是提供低速设备通知CPU的一种异步的方式。</u></p><p><em><strong>CPU可以高速运转的同时兼顾低速设备的响应，但这样子会频繁的打断CPU的运算，降低CPU的效率。</strong></em></p><h2 id="DMA（直接存储器访问）"><a href="#DMA（直接存储器访问）" class="headerlink" title="DMA（直接存储器访问）"></a>DMA（直接存储器访问）</h2><p> 设计了一个硬件，连接在IO设备和主存之间，这样在信息交流时就不需要中断CPU（CPU和主存相连）。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>计算机的总线</title>
+    <link href="/2021/07/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%BB%E7%BA%BF/"/>
+    <url>/2021/07/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%80%BB%E7%BA%BF/</url>
+    
+    <content type="html"><![CDATA[<h1 id="总线的概述"><a href="#总线的概述" class="headerlink" title="总线的概述"></a>总线的概述</h1><h2 id="定义与作用"><a href="#定义与作用" class="headerlink" title="定义与作用"></a>定义与作用</h2><p>计算机各个功能部件之间传输信息的公共通信干线。简单来说就是各个计算机部件传递信息通用的线路。总线提供了计算机对外的接口，给我们鼠标键盘等各种设备有地方连接到计算机，也使得不同设备通过统一的接口连接。</p><h2 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h2><h3 id="片内总线"><a href="#片内总线" class="headerlink" title="片内总线"></a>片内总线</h3><p> 在芯片内部的总线，连接控制器、寄存器、运算器等部分。 </p><h3 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h3><p> 计算机外围的各种总线</p><h4 id="数据总线"><a href="#数据总线" class="headerlink" title="数据总线"></a>数据总线</h4><p> 双向传输各个部件的数据信息，总线宽度一般与CPU位数相同（32或64）</p><h4 id="地址总线"><a href="#地址总线" class="headerlink" title="地址总线"></a>地址总线</h4><p>指定源数据或目的数据在内存中的地址，总线宽度与存储单元有关。</p><h4 id="控制总线"><a href="#控制总线" class="headerlink" title="控制总线"></a>控制总线</h4><p>发出控制信号的传输线，可以监视不同组件之间的状态。（就绪|未就绪）</p><h1 id="总线的仲裁"><a href="#总线的仲裁" class="headerlink" title="总线的仲裁"></a>总线的仲裁</h1><p>  因为各个部件数据传输是同用一条数据总线，那么当计算机需要同时调用多个部件进行数据传输时，该由哪个部件先进行传输？这时我们就需要一个<strong>仲裁器</strong>来判定数据传输的优先顺序。<strong>仲裁就是为了解决总线使用权的冲突问题。</strong>接下来介绍总线仲裁的方法。</p><h2 id="集中仲裁方式"><a href="#集中仲裁方式" class="headerlink" title="集中仲裁方式"></a>集中仲裁方式</h2><h3 id="链式查询方式"><a href="#链式查询方式" class="headerlink" title="链式查询方式"></a>链式查询方式</h3><p> 设备需要使用总线时发送请求给仲裁控制器，控制器发送响应信号，若响应信号在传输到该设备之前经过的设备有总线请求则信号被拦截，且发送总线被占用信号。</p><p><u>优先级：</u>离仲裁器近的，级别高；远的，级别低。</p><p>优点：结构简单，设备优先级固定，电路复杂度低，扩充容易；</p><p>缺点：对硬件电路故障敏感；优先级低的设备长期不能占用总线。</p><h3 id="计数器定时查询方式"><a href="#计数器定时查询方式" class="headerlink" title="计数器定时查询方式"></a>计数器定时查询方式</h3><p> 给设备编号，当有设备发送总线请求时，仲裁器计数器开始计时，且向各个设备发送计时的值，当计时值与请求使用总线的设备编号一致则停止计数查询，该设备获得总线控制权。</p><p><u>一般来说编号都是设备的地址</u></p><p>优点：计数初值可以改变优先顺序；对电路的故障没有链式敏感。</p><p>缺点：控制结构复杂；增加了控制线数。</p><h3 id="独立请求方式"><a href="#独立请求方式" class="headerlink" title="独立请求方式"></a>独立请求方式</h3><p> 每个设备有一对和仲裁器直连的线：总线请求线和总线允许线，当多个设备发送请求时，信号在仲裁器里按一定的优先次序排队。</p><p>优点：响应速度快；优先次序灵活。</p><p>缺点：控制线最多，结构更加复杂，控制逻辑更加复杂。</p><h2 id="分布仲裁方式"><a href="#分布仲裁方式" class="headerlink" title="分布仲裁方式"></a>分布仲裁方式</h2><p>每个设备有自己的仲裁器和仲裁号……………</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>计算机的字符与编码集</title>
+    <link href="/2021/05/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%8E%E7%BC%96%E7%A0%81%E9%9B%86/"/>
+    <url>/2021/05/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%8E%E7%BC%96%E7%A0%81%E9%9B%86/</url>
+    
+    <content type="html"><![CDATA[<h1 id="字符编码集的历史"><a href="#字符编码集的历史" class="headerlink" title="字符编码集的历史"></a>字符编码集的历史</h1><h2 id="ASCII码"><a href="#ASCII码" class="headerlink" title="ASCII码"></a>ASCII码</h2><p>ASCII码是基于拉丁字母的电脑编码系统，由七个bit就可以完全表示ASCII码一共定义了128=2^7个字符，包括95个可打印字符和33个不可打印字符（包括控制字符）。</p><h3 id="产生原因"><a href="#产生原因" class="headerlink" title="产生原因"></a>产生原因</h3><p> 计算机数据的储存和运算都是由二进制表示，而我们常用的语言也是需要由二进制表示。用哪些二进制表示哪些字母符号，这样定义的一套对照表就是编码。但我们要想互相交流数据，就必须定义一套大家都用的相同的对照表，这就是ASCII码出台的意义。另外由八个bit表示各种语言的是ISO/IEC 10646，它能保证与其他字符集的双向兼容。</p><h2 id="Extended-ASCII码"><a href="#Extended-ASCII码" class="headerlink" title="Extended ASCII码"></a>Extended ASCII码</h2><p>其他国家的语言和数学运算符无法表示，便将7bits扩大为8bits</p><h2 id="字符编码集的国际化"><a href="#字符编码集的国际化" class="headerlink" title="字符编码集的国际化"></a>字符编码集的国际化</h2><p>即使Extended ASCII码的出现填补了很多国家语言和特殊数学运算符的空白，但是还是有很多的国家的语言无法包含，且有些语言的体系不一样，不以有限的组合的语言存在（汉语）。主要是汉语体系，包括汉语，韩语，日语……</p><h1 id="中文编码集"><a href="#中文编码集" class="headerlink" title="中文编码集"></a>中文编码集</h1><h2 id="GB2312"><a href="#GB2312" class="headerlink" title="GB2312"></a>GB2312</h2><p> 《信息交换用汉字编码字符集——基本集》，该编码集收录了7445个字符，包括6763个汉字和682个其它符号，但它不符合国际标准。</p><h2 id="GBK"><a href="#GBK" class="headerlink" title="GBK"></a>GBK</h2><p>《汉字内码拓展规范》，向下兼容GB2312，向上支持国际ISO标准，收录21003个汉字，还支持中日韩汉字输入。</p><p>以上两个编码集都是本地编码集，无法跨国使用。比如以以上的编码集搭建一个国内网站，有外国友人访问，若友人没有安装GB2312或者GBK，网站就只会显示乱码，所以我们需要一个兼容全球的字符集</p><h2 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h2><p>（统一码，万国码）全世界统一的编码集。Unicode有很多不同的版本，以UTF-*表示，如我们所学的UTF-8就是以字节为单位对Unicode进行编码，也是我们编程推荐使用UTF-8。</p><p>注：在Windows系统下，我们编程默认的是GBK编码集，在编程时要注意编码集的问题。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>计算机的计算单位</title>
     <link href="/2021/05/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%AE%A1%E7%AE%97%E5%8D%95%E4%BD%8D/"/>
     <url>/2021/05/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%AE%A1%E7%AE%97%E5%8D%95%E4%BD%8D/</url>

@@ -18,7 +18,7 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-  <title>计算机的计算单位 - HyPerce‘s jotter</title>
+  <title>计算机的总线 - HyPerce‘s jotter</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -158,12 +158,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/tp4.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="计算机的计算单位">
+            <span class="h2" id="subtitle" title="计算机的总线">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-05-04 14:50" pubdate>
-        2021年5月4日 下午
+      <time datetime="2021-07-12 17:34" pubdate>
+        2021年7月12日 下午
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      424 字
+      752 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      7
        分钟
     </span>
   
@@ -225,15 +225,28 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">计算机的计算单位</h1>
+            <h1 style="display: none">计算机的总线</h1>
             
             <div class="markdown-body">
-              <h1 id="容量单位"><a href="#容量单位" class="headerlink" title="容量单位"></a>容量单位</h1><h2 id="bit比特位"><a href="#bit比特位" class="headerlink" title="bit比特位"></a>bit比特位</h2><p>在物理层面，我们用高低电平记录信息，即高表示“1”，低表示“0”。理论上，计算机只能识别1/0两种状态。这里的0/1就是比特位。很明显，一个比特位只能表示两个状态，蕴含的信息太少了，于是人们想到了组合的方法来储存信息，催生了字节</p>
-<h2 id="Byte字节"><a href="#Byte字节" class="headerlink" title="Byte字节"></a>Byte字节</h2><p>一个bit蕴含的信息少，那么我用八个bits的组合来储存信息，所以<u>1Byte=8bits</u>。在早期硬盘，内存都没有这么大的时候字节还是十分有用的，但是随着需求的变大，字节无法满足需要了。于是老办法依然有效，定义出了其他的容量单位。</p>
-<h2 id="其他单位及换算"><a href="#其他单位及换算" class="headerlink" title="其他单位及换算"></a>其他单位及换算</h2><p><img src="https://www.pianshen.com/images/614/f71c0b5650b2111ff8a0c5bb57da3646.JPEG" srcset="/img/dd.gif" lazyload alt="查看源图像"></p>
-<h1 id="速度单位"><a href="#速度单位" class="headerlink" title="速度单位"></a>速度单位</h1><h2 id="网络速度"><a href="#网络速度" class="headerlink" title="网络速度"></a>网络速度</h2><p>一般来说，速度=容量/时间。如MB/s。但是在网络上有一个常用的单位Mbps，通常bps省略。这里的M和MB/s不一样，<strong>1M/s=1Mbps=1Mbit/s，1Mbit/s=(1/8)MB/s=0.125MB/s。</strong> 这就是为什么我们在100M光纤上测试的峰值速度只有12.5M每秒，因为它们的计算单位不一样。 </p>
-<h2 id="CPU的速度"><a href="#CPU的速度" class="headerlink" title="CPU的速度"></a>CPU的速度</h2><p> CPU的速度一般是指CPU的时钟频率，单位为赫兹（Hz）。目前主流的CPU时钟频率都在2GHz以上。</p>
-<h3 id="理解赫兹"><a href="#理解赫兹" class="headerlink" title="理解赫兹"></a>理解赫兹</h3><p>Hz是秒分之一，是每秒钟周期性变动重复次数的计量。Hz不是计算机的专有单位。在计算机中，我们是用高低电平来表示01，所以这里是指每秒钟高低电平变化的次数。<strong>2GHz=2*1000^3Hz=每秒20亿次。</strong> </p>
+              <h1 id="总线的概述"><a href="#总线的概述" class="headerlink" title="总线的概述"></a>总线的概述</h1><h2 id="定义与作用"><a href="#定义与作用" class="headerlink" title="定义与作用"></a>定义与作用</h2><p>计算机各个功能部件之间传输信息的公共通信干线。简单来说就是各个计算机部件传递信息通用的线路。总线提供了计算机对外的接口，给我们鼠标键盘等各种设备有地方连接到计算机，也使得不同设备通过统一的接口连接。</p>
+<h2 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h2><h3 id="片内总线"><a href="#片内总线" class="headerlink" title="片内总线"></a>片内总线</h3><p> 在芯片内部的总线，连接控制器、寄存器、运算器等部分。 </p>
+<h3 id="系统总线"><a href="#系统总线" class="headerlink" title="系统总线"></a>系统总线</h3><p> 计算机外围的各种总线</p>
+<h4 id="数据总线"><a href="#数据总线" class="headerlink" title="数据总线"></a>数据总线</h4><p> 双向传输各个部件的数据信息，总线宽度一般与CPU位数相同（32或64）</p>
+<h4 id="地址总线"><a href="#地址总线" class="headerlink" title="地址总线"></a>地址总线</h4><p>指定源数据或目的数据在内存中的地址，总线宽度与存储单元有关。</p>
+<h4 id="控制总线"><a href="#控制总线" class="headerlink" title="控制总线"></a>控制总线</h4><p>发出控制信号的传输线，可以监视不同组件之间的状态。（就绪|未就绪）</p>
+<h1 id="总线的仲裁"><a href="#总线的仲裁" class="headerlink" title="总线的仲裁"></a>总线的仲裁</h1><p>  因为各个部件数据传输是同用一条数据总线，那么当计算机需要同时调用多个部件进行数据传输时，该由哪个部件先进行传输？这时我们就需要一个<strong>仲裁器</strong>来判定数据传输的优先顺序。<strong>仲裁就是为了解决总线使用权的冲突问题。</strong>接下来介绍总线仲裁的方法。</p>
+<h2 id="集中仲裁方式"><a href="#集中仲裁方式" class="headerlink" title="集中仲裁方式"></a>集中仲裁方式</h2><h3 id="链式查询方式"><a href="#链式查询方式" class="headerlink" title="链式查询方式"></a>链式查询方式</h3><p> 设备需要使用总线时发送请求给仲裁控制器，控制器发送响应信号，若响应信号在传输到该设备之前经过的设备有总线请求则信号被拦截，且发送总线被占用信号。</p>
+<p><u>优先级：</u>离仲裁器近的，级别高；远的，级别低。</p>
+<p>优点：结构简单，设备优先级固定，电路复杂度低，扩充容易；</p>
+<p>缺点：对硬件电路故障敏感；优先级低的设备长期不能占用总线。</p>
+<h3 id="计数器定时查询方式"><a href="#计数器定时查询方式" class="headerlink" title="计数器定时查询方式"></a>计数器定时查询方式</h3><p> 给设备编号，当有设备发送总线请求时，仲裁器计数器开始计时，且向各个设备发送计时的值，当计时值与请求使用总线的设备编号一致则停止计数查询，该设备获得总线控制权。</p>
+<p><u>一般来说编号都是设备的地址</u></p>
+<p>优点：计数初值可以改变优先顺序；对电路的故障没有链式敏感。</p>
+<p>缺点：控制结构复杂；增加了控制线数。</p>
+<h3 id="独立请求方式"><a href="#独立请求方式" class="headerlink" title="独立请求方式"></a>独立请求方式</h3><p> 每个设备有一对和仲裁器直连的线：总线请求线和总线允许线，当多个设备发送请求时，信号在仲裁器里按一定的优先次序排队。</p>
+<p>优点：响应速度快；优先次序灵活。</p>
+<p>缺点：控制线最多，结构更加复杂，控制逻辑更加复杂。</p>
+<h2 id="分布仲裁方式"><a href="#分布仲裁方式" class="headerlink" title="分布仲裁方式"></a>分布仲裁方式</h2><p>每个设备有自己的仲裁器和仲裁号……………</p>
 
             </div>
             <hr>
@@ -254,9 +267,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/05/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%8E%E7%BC%96%E7%A0%81%E9%9B%86/">
+                      <a href="/2021/07/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">计算机的字符与编码集</span>
+                        <span class="hidden-mobile">计算机的输入输出设备</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -264,8 +277,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/05/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%B1%82%E6%AC%A1%E4%B8%8E%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
-                        <span class="hidden-mobile">计算机的层次与编程语言</span>
+                      <a href="/2021/05/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%8E%E7%BC%96%E7%A0%81%E9%9B%86/">
+                        <span class="hidden-mobile">计算机的字符与编码集</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
